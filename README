@@ -1,38 +1,6 @@
-README
+#CIELO
 
+Integração com a cielo utilizando seus WebServices, 
+com essa biblioteca é possível criar uma transação junto a cielo, consultar uma trasação existente.
 
-Card card = new Card();
-		//card.setName("Cartão teste");
-		card.setFlag("elo");
-		//card.setNumber("4012001111111111");
-		//card.setValidate("201805");
-		//card.setSecurityCode("123");
-		card.setToken("MfQtRBAC3M4bzdeu1x2vBziyibR8lQq3ykjnSL+j1tI=");
-
-		Order order = new Order();
-		order.setNumber("000001");
-		order.setCurrencyType("986");
-		order.setValue(508000);
-		order.setDate(new Date());
-		order.setDescription("Descricao");
-		order.setLanguage("PT");
-		order.setSoftDescription("App");
-		order.setPaymentType("1");
-		order.setInstallment(1);
-		order.setRateShipping("0");
-
-
-		Transaction transaction = new Transaction();
-		transaction.setCard(card);
-		transaction.setOrder(order);
-		//transaction.setReturnUrl("https://retornocielo.app.com.br");
-		transaction.setGenerateToken(true);
-		//transaction.setAuthorizationType(3);
-
-
-		ClientCieloService clientCieloService = new ClientCieloService("sdajkhdkjashdjashdjkasjdhajkdhajskdhakjgduyewqb","3213123123123",true);
-
-		System.out.println(clientCieloService.createTransation(transaction));
-		//System.out.println(clientCieloService.cancelTransaction("100699306927CF2F1001"));
-		System.out.println(clientCieloService.consultTransaction("100699306927CF2F1001"));
-		//System.out.println(clientCieloService.createToken(card));
+#Modo de Uso
