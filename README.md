@@ -81,7 +81,7 @@ clientCieloService.cancelTransaction(TID)
 Verifica com está o processo junto a cielo (Pendente, analise, etc)
 
 ```java
-clientCieloService.consultTransaction("100699306927CF2F1001")
+clientCieloService.consultTransaction(TID)
 ```
 
 ### Criar token cartão
